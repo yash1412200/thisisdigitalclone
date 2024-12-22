@@ -1,0 +1,734 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+    font-family: Cooper*M;
+    font-style:normal;
+    
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#main span{
+    color:springgreen
+}
+#nav{
+    
+    /* background-color: red; */
+    width: 100%;
+    height:10%;
+    position:sticky;
+    top:0;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* color: aqua; */
+}
+#first{
+    width:100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: beige; */
+}
+#nav h1{
+    font-size: 31px;
+    font-weight: 100;
+}
+#nav  i{
+    display:none;
+}
+#nav #part2{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+#nav #part2 a{
+    text-decoration: none ;
+    color:#222;
+    margin: 20px;
+    /* color:red; */
+}
+#nav #part2 a:nth-last-child(1){
+    padding:7px 18px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+#nav #part2 a:nth-last-child(1) #green{
+    width: 100%;
+    height: 100%;background-color: springgreen;
+    position: absolute;
+    top:0;
+    left:-100% ;
+    
+    transition: left 0.4s ease;
+}
+#nav #part2 a:nth-last-child(1) h5{
+    font-weight: 100;
+    position: relative;
+    z-index: 99 ;
+}
+#nav #part2 a:nth-last-child(1):hover #green{
+    left:0;
+
+}
+#first>h1{
+    font-size: 5.4vw;
+    /* background-color: red; */
+    width: 60%;
+    text-align: center;
+    font-weight: 100;
+    text-transform: capitalize;
+    z-index: 99;
+    position: relative;
+}
+#first>h1::after{
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 16px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    bottom: -5%;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-size: cover;
+}
+#first #springgreen{
+   /* background-color: red; */
+   position: absolute;
+   bottom: 27%;
+   width:20%;
+   text-align:center ;
+   font-weight: 100;
+}
+#i1{
+    border:1px solid black;
+    margin-left: 20px;
+    width:40px;
+    padding: 0 15px;
+    border-radius: 50px;
+    /* position: relative;
+    overflow: hidden; */
+}
+/* #first #springgreen h2 #yellow{
+   width:500px;
+   height: 500px;
+   background-color: springgreen;
+   top:10%;
+   z-index: 999;
+   position: relative;
+} */
+
+
+
+#first #img1{
+    height: 520px;
+    width: 365px;
+    position: absolute;
+    left: 8%;
+    top:15%;
+}
+#first #img2{
+    height: 210px;
+    width: 270px;
+    position: absolute;
+    right: 24%;
+    top:18%;
+}
+#first #img3{
+    height: 280px;
+    width: 265px;
+    position: absolute;
+    right: 10%;
+    bottom:8%;
+}
+#first img{
+    transition:margin 0.5s ease ;
+}
+#main img:hover{
+    margin-top: -10px;
+}
+#second{
+
+    height:70vh;
+    background-color: black;
+    color:#fff;
+    text-align: center;
+    
+}
+#second h3{
+/* background-color: red; */
+    padding-top: 30px;
+    font-weight: 200;
+    font-size:1.2vw ;
+
+}
+#second h3 span{
+    font-weight: 500;
+    color: springgreen;
+    font-size: 100px;
+    padding-left: 0;
+}
+#second h1{
+    text-align: center;
+    width:50%;
+    font-size: 2.9vw;
+    /* background-color: antiquewhite; */
+    font-weight: 200;
+    margin-top:20px;
+    margin-left: 25%;
+    line-height: 60px;
+}
+#second h2{
+    margin-top: 40px;
+}
+#second #i1{
+    border:1px solid #fff;
+    
+    
+}
+/* #second>h1::after{
+    content: "";
+    position: absolute;
+    width: 12%;
+    height: 62px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    bottom: -47%;
+    left: 48.8%;
+    transform: translate(-50%,0);
+    background-size: cover;
+} */
+#third{
+    width: 100%;
+    height:100%;
+    display: flex;
+    /* background-color: red; */
+}
+#third-right{
+    width:50%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    /* flex-direction: column; */
+    
+}
+#third-right-r{
+    height: 100%;
+    width:25%;
+    /* background-color: red; */
+}
+#third-right-l{
+    height: 100%;
+    width:75%;
+    /* background-color: red; */
+    padding-left:  15px;
+}
+#third-right-r #img4{
+    height: 75%;
+    width: 90%;
+    margin-bottom: 30px;
+}
+#third-right-r #img5{
+    height: 38%;
+    width: 90%;
+    
+}
+#third-right-l #img6{
+    height: 36%;
+    width: 78%;
+}
+#third-right-l #img7{
+    height: 90%;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#third-left{
+    width:50%;
+    height: 100%;
+    text-align: left;
+    
+}
+#third-left #a2{
+    /* background-color: red; */
+    width:55%;
+    font-size: 3.5vw;
+    font-weight: 500;
+    margin-top: 30%;
+    margin-left: 13%;
+}
+ /* #third-left #a2::after{
+    content: "";
+    position: absolute;
+    width: 12%;
+    height: 16px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    bottom:-110%;
+    left: 70%;
+    transform: translate(-50%,0);
+    background-size: cover;
+} */
+#third-left #a3{
+    /* background-color: red; */
+    width:60%;
+    font-size: 3.5vw;
+    font-weight: 500;
+   
+    margin-left: 13%;
+    
+}
+#third-left p{
+    margin-left: 13%;
+    margin-top: 50px;
+    line-height: 30px;
+    width:60%;
+    font-size: 1.2vw;
+}
+.notf{
+    margin-top: 60px;
+    margin-left: 13%;
+    display:flex;
+    
+}
+.notf h1{
+    font-weight: 100;
+    
+}
+.notf #h1{
+    font-weight: 100;
+    font-size: 1.2vw;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 0 10px;
+    padding-top: 4px;
+
+}
+.notf #h1 i{
+    margin-left: 5px;
+}
+#photo {
+    width: 40px;
+    height: 40px;
+    /* background-color: red; */
+    border-radius: 50% ;
+    background-image: url(https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBlcnNvbid8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+#fourth{
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 14.7%;
+    text-align: center;
+    padding-top: 150px;
+}
+#fourth h1{ 
+    width:50%;
+    /* background-color: blue; */
+    font-size: 3vw;
+    /* position: absolute; */
+    margin-left:25%;
+    font-weight: 100;
+}
+/* #fourth>h1::after{
+    content: "";
+    position: absolute;
+    width: 9%;
+    height: 65px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    bottom: -229%;
+    left: 37%;
+    transform: translate(-50%,0);
+    background-size: cover;
+} */
+#fourth-1{
+    margin-top: 7%;
+    width:100%;
+    height:82%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: row; */
+}
+#f1{
+    height:100%;
+    width:20%;
+    /* background-color: aqua; */
+    margin-left: 20px;
+}
+#f2{
+    margin-left: 20px;
+    height:100%;
+    width:20%;
+    /* background-color:aliceblue; */
+}
+#f3{
+    margin-left: 20px;
+    height:100%;
+    width:20%;
+    /* background-color:palegoldenrod; */
+}
+#f4{
+    margin-left: 20px;
+    height:100%;
+    width:20%;
+    /* background-color:indianred; */
+}
+#f1 img{
+    width:50%;
+    margin-bottom: 23%;
+}
+#f2 img{
+    width:50%;
+    margin-bottom: 23%;
+}
+#f3 img{
+    width:50%;
+    margin-bottom: 23%;
+}
+#f4 img{
+    width:50%;
+    margin-bottom: 23%;
+}
+#fifth{
+    width:100%;
+    height: 100%;
+    /* background-color: red; */
+    margin-top: 20%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+}
+.notf3{
+    margin-top: 100px;
+    margin-left: 40%;
+    display:flex;
+    
+}
+.notf3 h1{
+    font-weight: 100;
+    
+}
+.notf3 #h1{
+    font-weight: 100;
+    font-size: 1.2vw;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 0 10px;
+    padding-top: 4px;
+
+}
+.notf3 #h1 i{
+    margin-left: 5px;
+}
+#fifth-m{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#fifth-r{
+    width:40%;
+    height: 60%;
+    background-color: beige;
+    /* background-size: cover; */
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/Golf.jpeg?w=1200&h=900&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1635867985&s=5e7cee6801a656523b56b64a34d04786);
+    background-size: cover;
+    
+    color:#fff;
+    /* background-color: #0f0505; */
+}
+#fifth h2{
+    margin-top: 60px;
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #0000006b;
+     padding: 40px 40px;
+}
+#fifth-r h1{
+      
+       margin-top: 20%;
+       width:80%;
+       font-size: 3vw;
+       font-weight: 100;
+       margin-bottom: 20px;
+}
+#fifth-r button{
+    
+    height: 25px;
+    border:1px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+   margin-left: 20px;
+}
+#fifth-r button i{
+     color:white;
+     padding: 10px 20px;
+}
+#r1{
+    height: 10%;
+    width: 30%;
+    /* padding: 10px 10px; */
+}
+
+#fifth-l{
+    width:40%;
+    height: 60%;
+    background-color: beige;
+    /* background-size: cover; */
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/work-thumbnail-03.jpg?w=1200&h=900&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1627573623&s=efbebf8d2134c057c66886c970e18069);
+    background-size: cover;
+    margin-left: 40px;
+    color:#fff;
+}
+#overlay1{
+    height: 100%;
+    width: 100%;
+    background-color: #0000006b;
+     padding: 40px 40px;
+}
+#fifth-l h1{
+      
+    margin-top: 20%;
+    width:80%;
+    font-size: 3vw;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+#fifth-l button{
+ 
+ height: 25px;
+ border:1px solid white;
+ border-radius: 50px;
+ background-color: transparent;
+ margin-left: 20px;
+}
+#fifth-l button i{
+  color:white;
+  padding: 10px 20px;
+}
+#r2{
+ height: 10%;
+ width: 30%;
+ /* padding: 10px 10px; */
+}
+#y{
+    text-align: center;
+   
+    bottom: 10%;
+}
+#sixth{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sixth-img{
+    height: 350px;
+    width: 65%;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-239.jpg?w=1200&h=394&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002673&s=a8225dd79a8eb0d05ce0db6b2a5efd03);
+    background-size: cover;
+    margin-top: 150px;
+}
+#overlay3{
+    height: 100%;
+    width: 100%;
+    background-color:#0000006b;
+     padding: 40px 40px;
+     color:#fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     /* margin-top: -30px; */
+}
+#overlay3 h2{
+    margin-top: -80px;
+    width: 70%;
+    font-weight: 100;
+}
+
+#seventh{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15%; */
+}
+#seventh-m{
+    height: 80%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 2px solid white;
+    padding: 0 20px; */
+
+}
+#seventh-m div{
+    border-bottom: 1px solid #a5a3a3;
+
+}
+
+#head{
+    height: 60%;
+    width:30%;
+    /* background-color: blue; */
+    margin-top: 15%;
+    margin-left: 10px;
+    padding: 40px 10px;
+    color:#fff;
+}
+#head h1{
+    font-size: 3.5vw;
+    font-weight: 200;
+    width: 70%;
+}
+#head h2{
+    margin-top: 60px;
+}
+#head i{
+    border:1px solid white;
+    border-radius:50px;
+    padding:0 20px;
+}
+
+#Learn{
+    height: 60%;
+    width:10%;
+    /* background-color: blue; */
+    margin-top: 15%;
+    color:#fff;
+    
+    padding: 40px 40px;
+}
+#Learn h3{
+    margin-top: 20px;
+    font-weight: 500;
+    color: #a5a3a3;
+}
+#Explore{
+    height: 60%;
+    width:10%;
+    /* background-color: blue; */
+    margin-top: 15%;
+    /* margin-left: 20px; */
+    padding: 40px 40px;
+    color: #fff;
+}
+#Explore h3{
+    margin-top: 20px;
+    font-weight: 500;
+    color: #a5a3a3;
+}
+#Find-us{
+    height: 60%;
+    width:15%;
+    /* background-color: blue; */
+    margin-top: 15%;
+    /* margin-left: 20px; */
+    padding: 39px 40px;
+    color:#fff;
+}
+#Find-us h3{
+    margin-top: 20px;
+    font-weight: 500;
+    color: #a5a3a3;
+}
+#memb{
+    height: 60%;
+    width:12%;
+    /* background-color: blue; */
+    margin-top: 15%;
+    /* margin-left: 20px; */
+    padding: 40px 40px;
+}
+#memb #img8{
+    height: 20%;
+    width:100%;
+}
+#memb #img9{
+    height: 35%;
+    width:100%;
+    margin-top: 30px;
+}
+#memb #img10{
+    height: 15%;
+    width:100%;
+    margin-top: 30px;
+}
+#bottom{
+    width: 100%;
+    /* background-color: red; */
+    height: 20%;
+    display: flex;
+    align-self:center;
+    /* justify-content:space-evenly; */
+    padding-left: 12%;
+    padding-top: 50px;
+    /* color:#fff; */
+}
+#bottom h2{
+    font-weight: 100;
+    color:#fff;
+}
+#bottom #v{
+    font-weight: 100;
+    font-size: 1vw;
+    margin-left: 15%;
+    padding-top: 5px;
+    color:#a5a3a3;
+}
+#bottom #v3{
+    margin-left: 15px;
+    text-decoration: none;
+    color:#a5a3a3;
+    padding-top: 4px;
+
+}
+#v1{
+    margin-left: 20px;
+    font-weight: 100;
+    font-size: 1vw;
+    padding-top: 5px;
+    color:#a5a3a3;
+}
+#v2{
+    margin-left: 5px;
+    /* text-decoration: none; */
+    color:#a5a3a3;
+    padding-top: 4px;
+}
+#bottom i{
+    padding-top: 5px;
+    margin-left: 20px;
+    color:white;
+}
